@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<div id="canvas-holder" style="position: fixed; top: 0; left: 0; z-index: 0;"></div>
+
+<head>
+    <title>NutriDine App Waitlist</title>
+    <link rel="stylesheet" type="text/css" href="style_waitlist.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo.png" alt="Nutrition App Logo">
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content" style="position: relative; z-index: 1;">
+        <div class="container">
+            <h1>Get Ready for a Healthier You!</h1>
+            <p>Join the waitlist for NutriDine to start your fitness and wellness journey.</p>
+            <form id="waitlistForm">
+                <input type="FirstName" id="FirstName" placeholder="First Name">
+                <input type="LastName" id="LastName" placeholder="Last Name">
+
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <button type="submit">Join</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 NutriDine App. All rights reserved.</p>
+    </footer>
+
+    <script src="background.js"></script>
+    <script src="script_waitlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Contents of style.css */
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 30;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #143434;
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust this value based on your design requirements */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px; /* This will add space from the left */
+    padding-top: 60px; /* Adjust this value as needed to move the logo down */
+  }
+  
+  
+  
+  .slogan {
+    font-weight: 700; /* Make it bold */
+    font-size: 2em; /* Make it larger, adjust value as needed */
+    margin: 40px;
+    margin-left: 0px;
+  }
+  
+  .description {
+    font-size: 1.5em; /* Increase font size, adjust as needed */
+    margin: 20px 0; /* Add some margin if needed */
+    /* Control the width to make it wrap into three lines or use media queries for responsiveness */
+    width: 60%; 
+    font-weight: 50;
+    margin: 40px;
+    margin-left: 0px;
+  }
+
+  .feature em { /* Specific styles for emphasized text within the feature boxes */
+    font-weight: 700; /* Bold */
+    font-style: italic; /* Italic */
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for a larger button */
+    background-color: #143434;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Increased border-radius to make the button rounder */
+    transition: box-shadow 0.3s ease; /* Add smooth transition for shadow */
+    font-size: 1em; /* Adjust button text size if needed */
+    margin: 40px;
+    margin-left: 0px;
+    z-index: 1;
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    overflow: hidden; /* Ensures pseudo-elements don't extend beyond the button's boundaries */
+    transition: color 0.3s ease; /* Transition for text color change if desired */
+  }
+  
+  .button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent; /* Initially the border is transparent */
+    border-radius: 50px; /* Match the border-radius of the button */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    transform: scale(0);
+    z-index: 0;
+  }
+  
+  .button:hover::after {
+    transform: scale(1);
+    border-color: #bed1ac; /* The color you want for the glowing border */
+  }
+  .features {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 0; /* Remove padding to align with the .container */
+  }
+  
+  .feature {
+    width: calc(25% - 40px); /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #F8F4EC;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-right: 20px; /* Space between feature boxes */
+    z-index: 2;
+  }
+  
+  /* Target the first feature box to align with the container's content */
+  .feature:first-child {
+    margin-left: 0px; /* This should be the same as the container's padding */
+  }
+  
+  html, body {
+    width: 100%; 
+    height: 100%; 
+    padding: 0; 
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(0deg, #bed1ac  20%, #F8F4EC 100%);
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* Style for your canvas */
+#projector {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensures that the canvas is behind other content */
+}

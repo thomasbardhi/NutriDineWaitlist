@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #143434; /* Use 'background' instead of 'background-color' */
+
+}
+
+
+header {
+    background-color: #F8F4EC; /* Lighter background to contrast the deep green */
+    padding: 10px 0;
+    color: white;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Logo text color */
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container {
+    background: linear-gradient(0deg, #bed1ac  20%, #F8F4EC 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+    max-width: 400px;
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 2px solid #143434; /* Border color */
+    outline: none;
+}
+input[type="FirstName"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 2px solid #143434; /* Border color */
+    outline: none;
+}
+
+input[type="LastName"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 2px solid #143434; /* Border color */
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #143434; /* Button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0a2626; /* Darker shade for button hover */
+}
+
+footer {
+    background-color: #F8F4EC; /* Lighter background to contrast the deep green */
+    color: #143434;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#message {
+    margin-top: 20px;
+    color: #143434; /* Message text color */
+}
+
+
+
+.logo img {
+    width: auto; /* or you can set a specific width */
+    height: 50px; /* Adjust the height as needed */
+    /* If you want to maintain the aspect ratio, only set either the width or height */
+}
