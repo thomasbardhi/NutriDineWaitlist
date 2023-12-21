@@ -10,8 +10,6 @@ document.getElementById('waitlistForm').addEventListener('submit', function(even
     var submissions = JSON.parse(localStorage.getItem('submissions') || '[]');
     submissions.push({ firstName, lastName, email });
     localStorage.setItem('submissions', JSON.stringify(submissions));
-
-    alert('Submission saved. Thank you!');
 });
 
 // Function to download the data as CSV
